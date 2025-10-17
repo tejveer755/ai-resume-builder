@@ -10,6 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Logo } from '@/components/icons/logo';
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import Link from 'next/link'
 
 function GoogleIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
