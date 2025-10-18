@@ -97,7 +97,7 @@ export default function Home() {
       </main>
       <footer className="bg-card/30">
         <div className="container mx-auto px-4 py-6 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} AI Career Compass. All rights reserved.</p>
+          {/* <p>&copy; {new Date().getFullYear()} AI Career Compass. All rights reserved.</p> */}
         </div>
       </footer>
     </div>

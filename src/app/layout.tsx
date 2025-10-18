@@ -3,6 +3,7 @@ import './globals.css';
 import { AuthProvider } from '@/components/providers/auth-provider';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AI Career Compass',
@@ -29,6 +30,17 @@ export default function RootLayout({
           {children}
           <Toaster />
         </AuthProvider>
+        <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground py-4">
+          <span>Built with ❤️ by</span>
+          <Link
+            href="https://github.com/tejveer755"
+            target="_blank"
+            className="text-primary font-medium hover:underline hover:text-primary/80 transition-colors duration-200 uppercase"
+          >
+            this guy
+          </Link>
+        </div>
+
       </body>
     </html>
   );
